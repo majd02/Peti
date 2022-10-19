@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".AddPetsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  PetsCare"
+            android:id="@+id/petscare"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:id="@+id/name"
+            android:hint="Name"
+            android:padding="20dp"
+            android:textColor="@color/white">
+
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:id="@+id/food"
+            android:hint="Food"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:inputType="time"
+            >
+
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/food"
+            android:id="@+id/walk"
+            android:hint="Walk"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:inputType="time"
+            >
+
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/walk"
+            android:id="@+id/shower"
+            android:hint="Shower"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:inputType="date"
+            >
+
+        </EditText>
+
+        <ImageView
+            android:layout_below="@+id/petscare"
+           android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shower"
+            android:gravity="center"
+            android:text="ADD PET" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
